@@ -7,7 +7,7 @@ const targetDir = 'C:\\Users\\at317\\Downloads\\展示物提出場所_R05成果�
 const files = fs.readdirSync(targetDir).filter(file => file.endsWith('.pdf'));
 console.log(files)
 
-
+fs.mkdirSync(`${targetDir}/images`, { recursive: true });
 
 
 for (const file of files) {
